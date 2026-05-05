@@ -1,0 +1,70 @@
+.internal-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.user-field {
+  flex: 1;
+}
+
+.info-field {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.rules-table {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  font-size: 10px;
+}
+
+.rules-table-header {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 40px;
+  padding: 6px 10px;
+  background: var(--panel2);
+  border-bottom: 1px solid var(--border);
+  color: var(--text3);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.rules-row {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 40px;
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+  color: var(--text2);
+}
+
+.rules-row:last-child {
+  border-bottom: none;
+}
+
+.rules-row.pass {
+  background: var(--green-pale);
+  color: var(--green);
+}
+
+.rules-row.fail {
+  background: transparent;
+}
+
+.rules-example {
+  color: var(--text3);
+  font-style: italic;
+}
+
+.rules-status {
+  text-align: center;
+  font-weight: 700;
+}
+
+.rules-row.pass .rules-status { color: var(--green); }
+.rules-row.fail .rules-status { color: var(--red-dim); }

@@ -1,0 +1,97 @@
+.topbar {
+  background-color: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  gap: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.topbar-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 20px 0px 0px;
+  padding: 10px 20px 10px 10px;
+  border-right: 1px solid var(--border);
+}
+
+.app-id {
+  font-size: 9px;
+  color: var(--text3);
+  letter-spacing: 0.1em;
+}
+
+.app-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--green);
+  letter-spacing: -0.02em;
+}
+
+.app-ver {
+  font-size: 9px;
+  color: var(--amber);
+}
+
+.topbar-nav {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  flex: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  color: var(--text3);
+  font-size: 11px;
+  padding: 0 14px;
+  border-right: 1px solid var(--border);
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.nav-item.active {
+  background-color: var(--green-pale);
+  color: var(--green);
+  border-bottom: 2px solid var(--green);
+}
+
+.nav-item:hover {
+  color: var(--text2);
+  background-color: var(--panel);
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  padding: 0px 0px 0px 16px;
+}
+
+.status-pill {
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 1px;
+  letter-spacing: 0.05em;
+  border: 1px solid;
+}
+
+.status-pill.ok {
+  color: var(--green);
+  border-color: var(--green-dim);
+  background-color: var(--green-pale);
+}
+
+.status-pill.warn {
+  color: var(--amber);
+  border-color: var(--amber-dim);
+  background-color: #1f1a0a;
+}

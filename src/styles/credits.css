@@ -1,0 +1,39 @@
+.credits-screen {
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.credits-terminal {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.credits-line {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--green);
+  line-height: 1.8;
+  white-space: pre;
+}
+
+.credits-line.warn {
+  color: var(--red);
+}
+
+.credits-cursor {
+  display: inline-block;
+  animation: blink 0.8s step-end infinite;
+  color: var(--green);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}

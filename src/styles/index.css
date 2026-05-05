@@ -1,8 +1,36 @@
-p {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+:root {
+  --bg:         #0d0f0e;
+  --bg2:        #111410;
+  --bg3:        #161a14;
+  --panel:      #1a1f18;
+  --panel2:     #1f261c;
+  --border:     #2a3328;
+  --border2:    #354232;
+  --green:      #4ade80;
+  --green-dim:  #2d6b45;
+  --green-pale: #1a3a28;
+  --amber:      #fbbf24;
+  --amber-dim:  #7a5a12;
+  --red:        #f87171;
+  --red-dim:    #7a2222;
+  --blue:       #60a5fa;
+  --blue-dim:   #1e3a6e;
+  --cyan:       #22d3ee;
+  --text:       #c8d5c2;
+  --text2:      #8fa688;
+  --text3:      #526050;
+  --text-inv:   #0d0f0e;
+  --mono:       'JetBrains Mono', 'Courier Prime', monospace;
+  --radius:     2px;
+  --scanline:   repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px);
 }
 
 body {
+  font-family: var(--mono);
   margin: 0;
+  background-color: var(--bg);
+}
+
+a {
+  text-decoration: none;
 }

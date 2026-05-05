@@ -1,0 +1,63 @@
+.end-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.final-btn {
+  margin-top: 250px;
+  padding: 8px 16px;
+  color: var(--green);
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--panel2);
+  border: 1px solid var(--green);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.final-btn:hover {
+  opacity: 0.7;
+}
+
+.neon-text {
+  color: var(--green);
+  font-size: 64px;
+  font-weight: 700;
+  margin-top: 300px;
+  text-shadow:
+    0 0 4px var(--green),
+    0 0 12px var(--green),
+    0 0 30px var(--green),
+    0 0 60px var(--green-dim);
+  animation: neon-flicker 3s infinite;
+}
+
+@keyframes neon-flicker {
+  0%, 95%, 100% {
+    text-shadow:
+      0 0 4px var(--green),
+      0 0 12px var(--green),
+      0 0 30px var(--green),
+      0 0 60px var(--green-dim);
+    opacity: 1;
+  }
+  96% {
+    text-shadow: none;
+    opacity: 0.6;
+  }
+  98% {
+    text-shadow:
+      0 0 4px var(--green),
+      0 0 12px var(--green),
+      0 0 30px var(--green),
+      0 0 60px var(--green-dim);
+    opacity: 1;
+  }
+  99% {
+    text-shadow: none;
+    opacity: 0.4;
+  }
+}

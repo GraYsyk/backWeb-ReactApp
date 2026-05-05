@@ -1,0 +1,78 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1000;
+}
+
+.error-dialog {
+  background: var(--panel);
+  border: 1px solid var(--red-dim);
+  border-radius: var(--radius);
+  width: 260px;
+  overflow: hidden;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.5);
+}
+
+.error-dialog.warn {
+  border-color: var(--amber-dim);
+}
+
+.error-dialog:nth-child(2) {
+  margin-left: 40px;
+  border-color: var(--amber-dim);
+}
+
+.error-dialog:nth-child(3) {
+  margin-left: 20px;
+}
+
+.error-dialog-titlebar {
+  background: var(--red-dim);
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error-dialog-titlebar.warn {
+  background-color: var(--amber-dim);
+}
+
+.error-dialog:nth-child(2) .error-dialog-titlebar { background: var(--amber-dim); }
+
+.error-dialog-titlebar-text {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.error-dialog-titlebar-x {
+  font-size: 10px;
+  color: var(--text2);
+  cursor: pointer;
+  border: 1px solid var(--border2);
+  width: 14px; height: 14px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 1px;
+}
+
+.error-dialog-body {
+  padding: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.error-dialog-icon { font-size: 20px; flex-shrink: 0; }
+.error-dialog-text { font-size: 11px; color: var(--text2); line-height: 1.5; }
+.error-dialog-btns {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+  padding: 0 12px 10px;
+}

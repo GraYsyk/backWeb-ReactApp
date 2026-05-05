@@ -1,0 +1,127 @@
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.confirm-dialog {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  width: 320px;
+  font-family: var(--mono);
+  overflow: hidden;
+}
+
+.confirm-titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--panel2);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 14px;
+}
+
+.confirm-titlebar-text {
+  color: var(--text3);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.confirm-titlebar-x {
+  color: var(--text3);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.confirm-titlebar-x:hover { color: var(--text); }
+
+.confirm-body {
+  padding: 18px 16px 6px;
+}
+
+.confirm-info {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 16px;
+}
+
+.confirm-info-title {
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+
+.confirm-info-text {
+  color: var(--text2);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.confirm-phone {
+  color: var(--text);
+}
+
+.confirm-field-title {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text2);
+  letter-spacing: 0.08em;
+  margin-bottom: 5px;
+}
+
+.confirm-input {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--bg);
+  border: 1px solid var(--border2);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 18px;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  outline: none;
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+
+.confirm-input:focus { border-color: var(--green-dim); }
+
+.confirm-meta {
+  font-size: 9px;
+  color: var(--text3);
+  margin-top: 4px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  min-height: 14px;
+}
+
+.confirm-meta.error { color: var(--red); }
+
+.confirm-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg2);
+  padding: 10px 16px;
+  border-top: 1px solid var(--border);
+  margin-top: 10px;
+}
+
+.confirm-resend {
+  font-size: 9px;
+  color: var(--text3);
+  cursor: pointer;
+}
+
+.confirm-resend:hover { color: var(--text2); }

@@ -1,0 +1,234 @@
+.header-01 {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 16px;
+  margin-top: 40px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.header-01-title {
+  color: var(--green);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.header-01-meta {
+  color: var(--text3);
+  font-size: 10px;
+}
+
+.header-01-id {
+  color: var(--text3);
+  font-size: 10px;
+  margin-left: auto;
+}
+
+.reg-panel-01 {
+  background-color: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.panel-01-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--panel2);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 14px;
+}
+
+.panel-01-header-title {
+  color: var(--text3);
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.panel-01-header-method {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--amber);
+  letter-spacing: 0.05em;
+}
+
+.panel-01-body {
+  padding: 10px 12px;
+}
+
+.panel-01-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg2);
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+}
+
+.btn {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 1px solid;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: opacity 0.15s, background-color 0.15s;
+}
+
+.back-btn {
+  background-color: transparent;
+  color: var(--text3);
+  border-color: var(--border2);
+}
+
+.submit-btn {
+  background-color: var(--green);
+  color: var(--bg2);
+  border-color: var(--green);
+}
+
+.num-btn {
+  flex: 1;
+  margin: 0;
+}
+
+.create-input {
+  border-color: var(--green);
+  background-color: var(--green-dim);
+  color: var(--green);
+  margin-left: 20px;
+}
+
+
+
+.back-btn:hover { background: var(--panel2); color: var(--text); }
+
+.submit-btn:hover { opacity: 0.85; }
+
+.input-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.name-input {
+  width: 50px;
+  background-color: var(--bg);
+  border: 1px solid var(--border2);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.15s;
+  appearance: none;
+}
+
+.basic-input {
+  background-color: var(--bg);
+  border: 1px solid var(--border2);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.15s;
+  appearance: none;
+}
+
+.flying-char {
+  position: fixed;
+  animation: fly 1.8s ease forwards;
+  pointer-events: none;
+  color: var(--text);
+  z-index: 9999;
+  transform-origin: center;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(var(--dx), var(--dy)) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--dx), var(--dy)) rotate(270deg) scale(0.3);
+    opacity: 0;
+  }
+}
+
+.input-row-meta {
+  font-size: 9px;
+  color: var(--red);
+  margin-top: 3px;
+  margin-bottom: 16px;
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+}
+
+.input-row-meta.done {
+  color: var(--green);
+}
+
+.input-field-title {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text2);
+  letter-spacing: 0.08em;
+  margin-bottom: 5px;
+}
+
+.input-field-title.exp {
+  margin-top: 12px;
+}
+
+.verify-final {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px;
+  background-color: var(--green-pale);
+  border: 1px solid var(--green-dim);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.num-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  width: fit-content;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.num-btns {
+  display: flex;
+  width: 100%;
+  margin-top: 2px;
+  
+}
+
+.num-btns .btn {
+  margin-left: 0px;
+  margin-bottom: 30px;
+}
